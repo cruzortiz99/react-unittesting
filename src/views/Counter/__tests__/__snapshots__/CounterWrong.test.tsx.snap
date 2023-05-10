@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterWrong component Should add 1 to the count when add button is clicked 1`] = `
+<div>
+  <div>
+    <h3>
+      Wrong Counter
+    </h3>
+    <p>
+      Count: 
+      1
+    </p>
+    <button>
+      Add
+    </button>
+    <button>
+      Minus
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CounterWrong component Should have 0 as default value when start render 1`] = `
+<div>
+  <div>
+    <h3>
+      Wrong Counter
+    </h3>
+    <p>
+      Count: 
+      0
+    </p>
+    <button>
+      Add
+    </button>
+    <button>
+      Minus
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CounterWrong component Should reduce 1 to the count when minus button is clicked 1`] = `
+<div>
+  <div>
+    <h3>
+      Wrong Counter
+    </h3>
+    <p>
+      Count: 
+      -1
+    </p>
+    <button>
+      Add
+    </button>
+    <button>
+      Minus
+    </button>
+  </div>
+</div>
+`;
