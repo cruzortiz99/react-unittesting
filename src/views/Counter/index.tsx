@@ -1,20 +1,31 @@
-import React, { useCallback, useState } from "react";
-import {increaseCount, decreaseCount} from '../../services/Counter'
+import React, { SetStateAction, useCallback, useState } from "react";
+import {
+  increaseCount,
+  decreaseCount,
+  multiplyCount,
+} from "../../services/Counter";
+import CounterView from "./CounterView";
 
 type CounterType = {
-  initialValue?: number
-}
-function Counter(props:CounterType ): JSX.Element {
+  initialValue?: number;
+};
+// OOP Design Patterns: Mediator 
+function Counter(props: CounterType): JSX.Element {
   const [count, setCount] = useState(props.initialValue || 0);
-  const addCount = useCallback(() => setCount(increaseCount), [setCount])
-  const reduceCount = useCallback(() => setCount(decreaseCount), [setCount])
+  const addCount = useCallback(() => setCount(increaseCount), [setCount]);
+  const reduceCount = useCallback(() => setCount(decreaseCount), [setCount]);
+  const multiply = useCallback(
+    (count: number, setFn: React.Dispatch<SetStateAction<number>>) => () =>
+      multiplyCount(count, 2).then((result) => setFn(result)),
+    []
+  );
   return (
-    <div>
-      <h3>Counter</h3>
-      <p>Count: <span data-testid="count">{count}</span></p>
-      <button data-testid="increase" onClick={addCount}>Add</button>
-      <button data-testid="decrease" onClick={reduceCount}>Minus</button>
-    </div>
+    <CounterView
+      count={count}
+      onIncrease={addCount}
+      onDecrease={reduceCount}
+      onMultiply={multiply(count, setCount)}
+    />
   );
 }
-export default Counter
+export default Counter;

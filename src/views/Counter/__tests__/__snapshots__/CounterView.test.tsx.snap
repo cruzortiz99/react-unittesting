@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter view It should render render as expected when component is mounted 1`] = `
+<div>
+  <div>
+    <h3>
+      Counter
+    </h3>
+    <p>
+      Count: 
+      <span
+        data-testid="count"
+      >
+        10
+      </span>
+    </p>
+    <button
+      data-testid="increase"
+    >
+      Add
+    </button>
+    <button
+      data-testid="decrease"
+    >
+      Minus
+    </button>
+    <button
+      data-testid="multiply"
+    >
+      x 2
+    </button>
+  </div>
+</div>
+`;
