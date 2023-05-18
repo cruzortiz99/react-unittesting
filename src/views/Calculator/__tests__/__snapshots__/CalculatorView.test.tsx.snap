@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator View Should render as expected when the component is mounted 1`] = `
+<div>
+  <div>
+    <h3>
+      Calculator
+    </h3>
+    <div
+      class="calculatorContainer"
+    >
+      <input
+        data-testid="firstNumber"
+        placeholder="Number1"
+        type="number"
+        value="10"
+      />
+      <select
+        data-testid="operation"
+      >
+        <option
+          data-testid="option-add"
+          value="add"
+        >
+          +
+        </option>
+        <option
+          data-testid="option-sub"
+          value="sub"
+        >
+          -
+        </option>
+        <option
+          data-testid="option-multiply"
+          value="multiply"
+        >
+          x
+        </option>
+        <option
+          data-testid="option-div"
+          value="div"
+        >
+          /
+        </option>
+      </select>
+      <input
+        data-testid="secondNumber"
+        placeholder="Number2"
+        type="number"
+        value="15"
+      />
+      <input
+        data-testid="result"
+        disabled=""
+        placeholder="Result"
+        readonly=""
+        type="number"
+        value="90"
+      />
+    </div>
+  </div>
+</div>
+`;

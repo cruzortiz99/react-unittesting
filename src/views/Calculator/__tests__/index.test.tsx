@@ -1,0 +1,13 @@
+describe("Calculator", () => {
+  test.skip("Should show first number as expected when is passed throw props", () => {})
+  test.skip("Should show second number as expected when is passed throw props", () => {})
+  test.skip("Should show operation as expected when is passed throw props", () => {})
+  test.skip("Should call calculator service to add first number and second number when operation add is selected", () => {})
+  test.skip("Should call calculator service to sub firstNumber and secondNumber when operation sub is selected", () => {})
+  test.skip("Should call calculator service to multiply firstNumber and secondNumber when operation multiply is selected", () => {})
+  test.skip("Should call calculator service to div firstNumber and secondNumber when operation div is selected", () => {})
+  test.skip("Should show error when calculator service is called with operation dov and second number is zero 0", () => {})
+  test.skip("Should first number change correctly when onFirstNumberChange is emitted", () => {})
+  test.skip("Should second number change correctly when onSecondNumberChange is emitted", () => {})
+  test.skip("Should operation change correctly when onOperationSelected is emitted", () => {})
+})
