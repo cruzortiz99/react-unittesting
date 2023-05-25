@@ -65,3 +65,12 @@ export function Calcultator(props: CalculatorProps): JSX.Element {
     />
   );
 }
+
+
+
+
+
+
+
+
+
