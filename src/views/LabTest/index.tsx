@@ -48,7 +48,7 @@ function changeMenuVisibility(menu: any[], cardKey: number, isCardVisible: boole
     }
     return item
   }).map((item, itemKey, originalArray) => {
-    const lastIndexVisible = originalArray.findLastIndex((value) => value.checked)
+    const lastIndexVisible = originalArray.reduce((acc, value: any, currentIndex) => value.checked ? currentIndex : acc, -1)
     if (itemKey !== lastIndexVisible) {
       item.checked = false
     }

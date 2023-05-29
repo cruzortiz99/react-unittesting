@@ -51,7 +51,7 @@ export function Calcultator(props: CalculatorProps): JSX.Element {
   );
   useEffect(() => {
     handleResultCalculation(firstNumber,secondNumber,operationSelected)
-  }, [])
+  }, [firstNumber, secondNumber,operationSelected, handleResultCalculation])
   return (
     <CalcultatorView
       firstNumber={firstNumber}
