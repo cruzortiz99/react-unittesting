@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from "@testing-library/react"
-import CounterView from "../../Counter/CounterView"
 import { CalculatorOperation, CalcultatorView, getCalculatorOperationFromString } from "../CalculatorView"
 
 describe("Calculator View", () => {
